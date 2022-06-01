@@ -5,13 +5,17 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './body.component.html',
   styleUrls: ['./body.component.css']
 })
-export class BodyComponent implements OnInit {
+export class BodyComponent {
 
+  mostrar = true;
 
-
-  constructor() { }
-
-  ngOnInit(): void {
+  frase: any = {
+    titulo: 'ejemplo de interpolacion',
+    autor: 'Lorem ipsum dolor sit amet consectetur adipisicing elit'
   }
 
-}
+  personajes: string[] = ['Batman','Superman','Aquaman', 'Spiderman']
+
+  }
+
+

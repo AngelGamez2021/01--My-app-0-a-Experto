@@ -13,6 +13,7 @@ export class FooterComponent {
   constructor() {
 
         this.anio = new Date().getFullYear();
+        // captura el año actual
   }
 
 }

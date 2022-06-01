@@ -1,22 +1,50 @@
 .container{
     display: flex;
+    /* me pone el contenido a los lados */
 }
 
 
 .cards{
+    width: 400px;
     background: #eaeaff;
     padding: 20px;
     margin-right: 20px;
     box-shadow: 0px 3px 10px rgba(72, 93, 199, 0.102);
     border: solid 1px #bebebe;
     border-radius: 10px;
+
+}
+
+button{
+    margin-top: 40px;
+    width: 100%;
+    background: linear-gradient(70deg, blue, rgb(227, 227, 255)); 
+    /* degradado */
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 3px 10px rgba(72, 93, 199, 0.102);
+
 }
 
 
 .list{
-
     padding: 20px;
     box-shadow: 0px 3px 10px rgba(72, 93, 199, 0.102);
+}
+
+ul{
+    padding: 0;
+}
+
+
+li{
+    list-style: none;
+    /* le quita las viñetas a las listas */
+    margin-bottom: 10px;
+    padding: 5px;
+
 }
 
 

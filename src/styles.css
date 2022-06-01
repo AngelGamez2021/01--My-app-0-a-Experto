@@ -10,7 +10,8 @@ footer{
     color: white;
     text-align: center;
     background-color: gray;
-    bottom: 0px;
+    bottom: 0px; 
+    /* para que lo tire al final del contenedor */
     width: 100%;
     height: 40px;
 }

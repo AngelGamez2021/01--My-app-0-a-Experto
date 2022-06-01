@@ -7,11 +7,12 @@
     <h3>*ngIf</h3>
     <hr>
 
-    <div class="card">
-        <h5>titulo</h5>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur maiores est accusamus</p>
+    <div *ngIf="mostrar" class="card">
+        <h5>{{frase.titulo}}</h5>
+        <p>{{frase.autor}}</p>
     </div>
-    <button>Mostrar/Ocultar</button>
+    <button (click)="mostrar = !mostrar">Mostrar/Ocultar</button>
+    <!-- el boton click cada vez que se le de click va a negar el estado, en que se encuentre -->
 
     </div>
 
@@ -20,11 +21,9 @@
         <hr>
 
         <ul>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit<li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit<li>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit<li>
-
-        </ul>
+            <li *ngFor="let personaje of personajes; let i = index">
+                {{i+1}} {{personaje}}<li>
+         </ul>
     </div>
 
 
